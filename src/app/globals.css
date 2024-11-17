@@ -26,24 +26,9 @@ body {
   background: url(../../public/PartlyCloudy.png) no-repeat;
 }
 .unknownWeather {
-  background: url(../../public/unknownImage.png) no-repeat center;
+  background: url(../../public/unknownImage.png) no-repeat;
 }
 
-.MainWeather {
-  height: 100vh;
-  background-size: cover;
-}
-.MainWeather input {
-  min-width: 20%;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 20px;
-  padding: 0.5rem;
-}
-.Inputs-Box {
-  background-color: rgba(128, 128, 128, 0.564);
-  min-width: 70vw;
-  padding: 5rem 0;
-  margin: auto;
-  border-radius: 50px;
+.overCastWeather {
+  background: url(../../public/overCast.png) no-repeat;
 }
