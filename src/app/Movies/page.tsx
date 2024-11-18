@@ -9,7 +9,7 @@ type Movie = {
   poster_path: string;
 };
 const Movies = () => {
-  const [looping, setLooping] = useState<LoopingItem[]>([]);
+  const [looping, setLooping] = useState([]);
 
   const [MovieName, setMovieName] = useState<string>("");
   const [Categ, setCateg] = useState<string>("movie");
