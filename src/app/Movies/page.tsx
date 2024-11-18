@@ -12,8 +12,8 @@ const Movies = () => {
   const [looping, setLooping] = useState([]);
 
   const [MovieName, setMovieName] = useState<string>("");
-  const [Categ, setCateg] = useState<string>("movie");
-  const [imgLoads, setImageLoads] = useState(true);
+  const [Categ] = useState<string>("movie");
+  // const [imgLoads, setImageLoads] = useState(true);
   // Query to fetch weather data
   const { data, error, isLoading } = useQuery({
     queryKey: ["movies", MovieName, Categ], // query key
