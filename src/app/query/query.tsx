@@ -33,3 +33,17 @@ export async function TranslateApi(
   const response = await fetch(url, options);
   return response.json();
 }
+
+export async function MovieApi(MovieName: string, Categ: string) {
+  const response = await fetch(
+    `https://mdblist.p.rapidapi.com/?s=${MovieName}&m=${Categ}`, // S for MovieName and Categ for Which its movie or Tv or NAN
+    {
+      headers: {
+        "x-rapidapi-key": "fe3469bdc5mshc1376ef3df17411p1623cajsn6da2a938a410",
+        "x-rapidapi-host": "mdblist.p.rapidapi.co",
+      },
+    }
+  );
+  // throw new Error("its an error");
+  return response.json();
+}
